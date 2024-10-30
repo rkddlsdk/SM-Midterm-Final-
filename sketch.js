@@ -5,11 +5,9 @@ function preload() {
 }
 
   function setup() {
-   createCanvas(img.width, img.height);
+  createCanvas(img.width, img.height);
   image(img, 0, 0, width, height);  
-
-
-
+    
   fill(164, 180, 203);//1번 삼각형 색깔
   noStroke(); //각 도형 테두리없이 
   triangle(583, 149, 674, 164, 590, 209) ; // 1번삼각형
@@ -136,12 +134,15 @@ function preload() {
   
   
   
+
+    
+    
+
 }
-    
-    
 
 
-function draw() {
+function mouseMoved() {
   
+  console.log(`Mouse X: ${mouseX}, Mouse Y: ${mouseY}`);
 }
 
